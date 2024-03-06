@@ -1,0 +1,167 @@
+:root {
+    --secondary-color: ##0C5169;
+}
+
+html {
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 35%, rgba(82,82,82,1) 58%, rgba(143,143,143,1) 89%, rgba(191,191,191,1) 100%);
+}
+html, body {
+    margin: 0 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    
+}
+main {
+    position: relative;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+}
+
+.main-content {
+    text-align: center;
+    
+}
+
+.main-content > .logo {
+    width: 7em;
+    height: 7em;
+    margin-top: 2em;
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+h3 {
+    margin-top: 5em;
+    margin-bottom: 0;
+}
+.links {
+    display: grid;
+    justify-content: center;
+}
+ul {
+    width: 30em;
+
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+}
+ul > li > .social-media {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+    align-items: center;
+    padding: .2em;
+    
+}
+
+ul > li {
+    background-color: #fffa;
+    backdrop-filter: blur(10px);
+    border-radius: 1.5em;
+    align-items: center;
+    padding: 1.2em;
+    margin: 2.5em;
+    max-width: 30em;
+    text-align: center;
+    transition: 0.8s;
+    
+}
+
+
+
+
+ul > li:nth-of-type(1):hover {
+    background-color: #73130A;
+     a {
+        color: white;
+     }
+}
+
+ul > li:nth-of-type(2):hover {
+    transition: .8s;
+    background: rgb(88,81,219);
+    background: linear-gradient(90deg, rgba(88,81,219,1) 0%, rgba(193,53,132,1) 23%, rgba(225,48,108,1) 37%, rgba(253,29,29,1) 58%, rgba(247,119,55,1) 79%, rgba(252,175,69,1) 92%, rgba(255,220,128,1) 100%);
+    a {
+        color: white;
+    }
+}
+
+ul > li:nth-of-type(3):hover {
+    background-color: #178E43;
+    a {
+        color: white;
+    }
+}
+
+ul > li:nth-of-type(1) > a > img {
+    width: 2em;
+    align-items: center;
+}
+
+ul > li:nth-of-type(2) > a > img {
+    width: 1.3em;
+    
+}
+
+ul > li:nth-of-type(3) > a > img {
+    width: 1.5em;
+    
+}
+
+li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+li:nth-of-type(1) > a {
+    gap: .1em;
+}
+
+footer {
+    margin-top: 20em;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 390px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    html {
+        margin: .5em 0;
+    }
+    ul > li {
+        max-width: 25em;
+    }
+
+    /* Your styles for iPhone 12 in portrait mode */
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        margin: .5em 0;
+    }
+    p {
+        margin: 0 1em;
+    }
+
+    h3 {
+        margin-top: 4em;
+    }
+    .links {
+        margin-top: 0;
+    }
+    ul {
+        max-width: 25em;
+    }
+}
